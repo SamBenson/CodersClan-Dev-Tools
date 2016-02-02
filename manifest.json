@@ -1,0 +1,35 @@
+{
+  "name": "CodersClan Helper Tools",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Automatically convert task rewards to your local currency and see the amount after fees. Also highlights your assigned tasks on the main task listings.",
+  "homepage_url": "http://sambenson.co.uk",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "http://codersclan.net/*",
+    "http://www.codersclan.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.codersclan.net/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.codersclan.net/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.well.ticket {
+	transition: .25s background ease-in;
+}
+
+.my-task {
+	background: #F2F9DB !important;
+}
